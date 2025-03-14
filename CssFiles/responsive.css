@@ -1,0 +1,119 @@
+/* Home Page */
+@media (max-width: 1200px) {
+    .hero-content {
+        right: 30px;
+        max-width: 400px;
+    }
+
+    .about-us {
+        padding-left: 8rem;
+    }
+
+    .about-us .content img {
+        max-width: 400px;
+    }
+
+    .text {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        right: 20px;
+        max-width: 350px;
+    }
+
+    .about-us {
+        padding-left: 5rem;
+    }
+
+    .about-us .content img {
+        max-width: 350px;
+    }
+
+    .text {
+        max-width: 350px;
+    }
+
+    .cards-container {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .card {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        right: 10px;
+        max-width: 300px;
+    }
+
+    .about-us {
+        padding-left: 2rem;
+    }
+
+    .about-us .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us .content img,
+    .text {
+        max-width: 100%;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .gokochi-button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .about-us h3, .about-us h4 {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/* Contact Page */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-details, .contact-form {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .contact-details {
+        margin-bottom: 40px;
+    }
+}
