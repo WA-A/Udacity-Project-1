@@ -21,5 +21,10 @@ nav {
     color: #f0e68c;
     text-decoration: none;
     margin-left: 20px;
+   
+}
+
+.nav-links a.active {
+    font-weight: bold;
 }
 
