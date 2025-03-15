@@ -1,14 +1,14 @@
-
 /* Contact Container */
 .contact-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     max-width: 600px;
     margin: 50px auto;
-    padding: 0 20px ;
+    padding: 0 20px;
 }
 
 .contact-details, .contact-form {
-    flex: 1;
     padding: 20px;
 }
 
@@ -28,27 +28,23 @@
 
 /* Form Styles */
 .form-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 10px;
-    display: flex;
-    align-items: flex-start;
 }
 
 label {
-    width: 65px;
-    text-align: right;
-    padding-right: 5px;
     font-size: 14px;
-    padding-top: 8px;
 }
 
 input, textarea {
-    flex: 1;
     padding: 4px;
-    border: 3px solid ;
-    border-radius: 10px;
-    border-color: #ed747e;
-    font-size: 14px;
     margin-bottom: 5px;
+    border: 3px solid #ed747e;
+    border-radius: 10px;
+    font-size: 14px;
 }
 
 input {
@@ -60,11 +56,12 @@ textarea {
     resize: none;
 }
 
-
+/* Buttons */
 .form-buttons {
-    margin-top: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    margin-top: 10px;
 }
 
 button {
@@ -73,24 +70,19 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 90%;
 }
 
 .submit-btn {
     background-color: #64a766;
-    border: 3px solid ;
+    border: 3px solid #43815e;
     border-radius: 10px;
-    border-color: #43815e;
     color: white;
 }
 
 .reset-btn {
     background-color: #ed747e;
-    color: white;
-    border: 3px solid ;
+    border: 3px solid #a54e55;
     border-radius: 10px;
-    border-color: #a54e55;
-  
+    color: white;
 }
-
 

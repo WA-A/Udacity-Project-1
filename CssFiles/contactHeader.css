@@ -1,7 +1,7 @@
 /* Header Styles */
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding: 15px 30px;
     background-color: #1a3668;
@@ -14,12 +14,11 @@ header {
 }
 
 nav ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    gap: 1px;
     list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px;
+    justify-content: end;
 }
 
 nav ul li a {
@@ -33,10 +32,9 @@ nav ul li a.active {
 
 /* Banner Section */
 .banner {
+    display: grid;
+    place-items: center;
     height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     margin-bottom: 30%;
 }
@@ -47,10 +45,12 @@ nav ul li a.active {
     height: 20%;
     object-fit: cover;
     z-index: -1;
-    
 }
 
 .banner h1 {
     font-size: 28px;
     letter-spacing: 1px;
 }
+
+
+
